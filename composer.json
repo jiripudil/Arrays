@@ -1,0 +1,18 @@
+{
+	"name": "jiripudil/arrays",
+	"type": "library",
+	"description": "Array/list functions with uniform API and immutability.",
+	"keywords": ["arrays"],
+	"license": "MIT",
+	"require": {
+		"php": ">= 7.1.0"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "^0.9.0",
+		"nette/tester": "^2.0.0",
+		"phpstan/phpstan": "^0.8.0"
+	},
+	"autoload": {
+		"files": ["Arrays.php"]
+	}
+}

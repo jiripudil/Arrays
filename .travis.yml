@@ -1,0 +1,17 @@
+sudo: false
+language: php
+php:
+  - 7.1
+  - 7.2
+
+install:
+  - composer install --no-interaction
+
+script:
+  - vendor/bin/parallel-lint src tests
+  - vendor/bin/phpstan analyze -l 7 src
+  - vendor/bin/tester tests
+
+cache:
+  directories:
+    - $HOME/.composer/cache
